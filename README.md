@@ -13,7 +13,7 @@ This project is designed to display an Starbucks menu.
 * You will need to use methods such as map and reduce within the site. :green_circle:
 
 ## Demo
-![](https://github.com/Fateehs/Starbucks-Menu/blob/main/assets/starbucks%20menu.gif)
+![](https://github.com/Fateehs/Starbucks-Menu/blob/main/assets/starbucksmenu.gif)
 
 
 #### ATTENTION
