@@ -5,7 +5,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #00704A;
+    background-color: #116356;
     font-family: "Zilla Slab", serif;
 }
 
@@ -28,7 +28,7 @@ h2 {
 }
 
 .button {
-    background: #134429;
+    background: #006A50;
     border-radius: 999px;
     box-shadow: #063521 0 10px 20px -10px;
     box-sizing: border-box;
@@ -48,6 +48,11 @@ h2 {
     word-break: break-word;
     border: 0;
     margin-left: 2px;
+}
+
+.button:hover {
+    background-color: #003f29;
+    color: white;
 }
 
 .btn-item {
@@ -70,6 +75,8 @@ h2 {
 .menu-info {
     margin-left: 20px;
     width: 100%;
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .menu-title {
@@ -79,7 +86,7 @@ h2 {
 }
 
 h4 {
-    color: #00704A;
+    color: #ffffff;
 }
 
 .menu-text {

@@ -97,11 +97,33 @@ const filterCategory = (category) => {
 FILTERBUTTONS.childNodes.forEach((button) => {
   button.addEventListener("click", () => {
     const category = button.textContent;
-    if(category === "All"){
-      displayMenuItems(menu)
+    if (category === "All") {
+      displayMenuItems(menu);
     } else {
+      const filteredMenu = filterCategory(category);
+      displayMenuItems(filteredMenu);
     }
-  })
-})
+  });
+});
 
+// Displaying menu items on the screen
+function displayMenuItems(menuList) {
+  MENUITEMS.innerHTML = "";
+  menuList.forEach((element) => {
+    MENUITEMS.innerHTML += `<div class="menu-items col-lg-6 col-sm-12">
+      <img src=${element.img} class="photo">
+      <div class="menu-info">
+          <div class="menu-title">
+          <h4>${element.title}</h4>
+          <h4 class="price">${element.price} ₺</h4>
+          </div>
+          <div class="menu-text">
+          ${element.desc}
+          </div>
+      </div>
+      </div>`;
+  });
+}
 
+// Show all menu items on page load
+displayMenuItems(menu);
